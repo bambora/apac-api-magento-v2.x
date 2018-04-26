@@ -1,0 +1,17 @@
+{
+    "name": "bambora/apacapi",
+    "description": "Reign Bambora APAC Online for Magento 2 CE",
+    "type": "magento2-module",
+    "version": "1.0.1",
+    "license": [
+        "OSL-3.0"
+    ],
+    "require": {
+    },
+    "autoload": {  
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "Bambora\\Apacapi\\": ""        
+        } 
+    }
+}

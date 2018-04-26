@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author    Reign <hello@reign.com.au>
+ * @version   1.0.0
+ * @copyright Copyright (c) 2018 Reign. All rights reserved.
+ * @copyright Copyright (c) 2018 Bambora. All rights reserved.
+ * @license   Proprietary/Closed Source
+ * By viewing, using, or actively developing this application in any way, you are
+ * henceforth bound the license agreement, and all of its changes, set forth by
+ * Reign and Bambora. The license can be found, in its entirety, at this address:
+ * http://www.reign.com.au/magento-licence
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <virtualType name="Bambora\Apacapi\Model\ConfigProvider" type="Magento\Payment\Model\CcGenericConfigProvider">
+        <arguments>
+            <argument name="methodCodes" xsi:type="array">
+                <item name="bambora_apacapi" xsi:type="const">Bambora\Apacapi\Model\Payment::CODE</item>
+            </argument>
+        </arguments>
+    </virtualType>
+
+    <type name="Magento\Checkout\Model\CompositeConfigProvider">
+        <arguments>
+            <argument name="configProviders" xsi:type="array">
+                <item name="bambora_apacapi_config_provider" xsi:type="object">Bambora\Apacapi\Model\ConfigProvider</item>
+            </argument>
+        </arguments>
+    </type>
+
+</config>

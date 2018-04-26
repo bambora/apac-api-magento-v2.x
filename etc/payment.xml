@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author    Reign <hello@reign.com.au>
+ * @version   1.0.0
+ * @copyright Copyright (c) 2018 Reign. All rights reserved.
+ * @copyright Copyright (c) 2018 Bambora. All rights reserved.
+ * @license   Proprietary/Closed Source
+ * By viewing, using, or actively developing this application in any way, you are
+ * henceforth bound the license agreement, and all of its changes, set forth by
+ * Reign and Bambora. The license can be found, in its entirety, at this address:
+ * http://www.reign.com.au/magento-licence
+ */
+-->
+<payment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Payment:etc/payment.xsd">
+    <methods>
+        <method name="bambora_apacapi">
+            <allow_multiple_address>1</allow_multiple_address>
+        </method>
+    </methods>
+</payment>
