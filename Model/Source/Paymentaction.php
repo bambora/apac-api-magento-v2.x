@@ -1,7 +1,7 @@
 <?php
 /**
  * @author    Reign <hello@reign.com.au>
- * @version   1.0.0
+ * @version   1.1.0
  * @copyright Copyright (c) 2018 Reign. All rights reserved.
  * @copyright Copyright (c) 2018 Bambora. All rights reserved.
  * @license   Proprietary/Closed Source
@@ -22,7 +22,7 @@ class Paymentaction implements \Magento\Framework\Option\ArrayInterface
     {
         return [
             'authorize_capture' => 'Purchase',
-            'authorize' => 'Authorise Only',
+            'authorize'         => 'Authorise Only',
         ];
     }
 }

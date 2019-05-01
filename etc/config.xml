@@ -2,9 +2,9 @@
 <!--
 /**
  * @author    Reign <hello@reign.com.au>
- * @version   1.0.1
- * @copyright Copyright (c) 2018 Reign. All rights reserved.
- * @copyright Copyright (c) 2018 Bambora. All rights reserved.
+ * @version   1.1.0
+ * @copyright Copyright (c) 2019 Reign. All rights reserved.
+ * @copyright Copyright (c) 2019 Bambora. All rights reserved.
  * @license   Proprietary/Closed Source
  * By viewing, using, or actively developing this application in any way, you are
  * henceforth bound the license agreement, and all of its changes, set forth by
@@ -25,6 +25,10 @@
                 <cctypes>AE,VI,MC,DI,JCB</cctypes>
                 <allowspecific>0</allowspecific>
                 <min_order_total>0.50</min_order_total>
+                <can_authorize>1</can_authorize>
+                <can_capture>1</can_capture>
+                <can_refund>1</can_refund>
+                <can_void>0</can_void>               
             </bambora_apacapi>
         </payment>
     </default>

@@ -1,7 +1,7 @@
 <?php
 /**
  * @author    Reign <hello@reign.com.au>
- * @version   1.0.0
+ * @version   1.1.0
  * @copyright Copyright (c) 2018 Reign. All rights reserved.
  * @copyright Copyright (c) 2018 Bambora. All rights reserved.
  * @license   Proprietary/Closed Source
@@ -13,15 +13,16 @@
 
 namespace Bambora\Apacapi\Model\Source;
 
-class Status  implements \Magento\Framework\Option\ArrayInterface{
+class Status implements \Magento\Framework\Option\ArrayInterface
+{
     /**
-     * @var string[]
+     * @return array
      */
     public function toOptionArray()
     {
         return [
-            'pending' => 'Pending',
-            'processing' => 'Processing',
+            'pending'            => 'Pending',
+            'processing'         => 'Processing',
             'bambora_processing' => 'Bambora Processing',
         ];
     }

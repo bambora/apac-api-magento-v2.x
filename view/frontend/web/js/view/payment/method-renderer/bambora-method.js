@@ -1,6 +1,6 @@
 /**
  * @author    Reign <hello@reign.com.au>
- * @version   1.0.0
+ * @version   1.1.0
  * @copyright Copyright (c) 2018 Reign. All rights reserved.
  * @copyright Copyright (c) 2018 Bambora. All rights reserved.
  * @license   Proprietary/Closed Source
@@ -26,16 +26,16 @@ define(
                 template: 'Bambora_Apacapi/payment/bambora-form'
             },
 
-            getCode: function() {
+            getCode: function () {
                 return 'bambora_apacapi';
             },
 
-            isActive: function() {
+            isActive: function () {
                 return true;
             },
 
-            validate: function() {
-                var $form = $('#' + this.getCode() + '-form');
+            validate: function () {
+                let $form = $('#' + this.getCode() + '-form');
                 return $form.validation() && $form.validation('isValid');
             }
         });

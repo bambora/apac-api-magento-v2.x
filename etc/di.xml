@@ -15,20 +15,18 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
 
-    <virtualType name="Bambora\Apacapi\Model\ConfigProvider" type="Magento\Payment\Model\CcGenericConfigProvider">
+    <type name="Bambora\Apacapi\Logger\BamboraLogger">
         <arguments>
-            <argument name="methodCodes" xsi:type="array">
-                <item name="bambora_apacapi" xsi:type="const">Bambora\Apacapi\Model\Payment::CODE</item>
+            <argument name="name" xsi:type="string">bamboraApacapiLogger</argument>
+            <argument name="handlers" xsi:type="array">
+                <item name="debug" xsi:type="object">Bambora\Apacapi\Logger\Handler</item>
             </argument>
         </arguments>
-    </virtualType>
+    </type>
 
-    <type name="Magento\Checkout\Model\CompositeConfigProvider">
+    <type name="Bambora\Apacapi\Model\Payment">
         <arguments>
-            <argument name="configProviders" xsi:type="array">
-                <item name="bambora_apacapi_config_provider" xsi:type="object">Bambora\Apacapi\Model\ConfigProvider
-                </item>
-            </argument>
+            <argument name="bamboraLogger" xsi:type="object">Bambora\Apacapi\Logger\BamboraLogger</argument>
         </arguments>
     </type>
 </config>

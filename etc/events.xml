@@ -7,7 +7,7 @@
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
     <event name="sales_order_payment_place_end">
-        <observer name="bambora_apacapi" instance="Bambora\Apacapi\Observer\Changstatus"/>
+        <observer name="bambora_apacapi" instance="Bambora\Apacapi\Observer\ChangeStatus"/>
     </event>
     <!--
     <event name="sales_order_payment_transaction_html_txn_id">
