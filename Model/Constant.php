@@ -39,9 +39,6 @@ interface Constant
     // Integrated Checkout
     const CHECKOUT_V1_PURCHASE = 'checkout_v1_purchase';
     const CHECKOUT_V1_PREAUTH = 'checkout_v1_preauth';
-    // const CHECKOUT_V1_PREAUTH = 'checkout_v1_purchase';
-
-    // const SANDBOX_INTEGRATED_CHECKOUT_URL = 'https://demo.ippayments.com.au/access/index.aspx';
     const SANDBOX_INTEGRATED_CHECKOUT_URL = 'https://demo.bambora.co.nz/access/index.aspx';
     const LIVE_INTEGRATED_CHECKOUT_URL = 'https://www.ippayments.com.au/access/index.aspx';
 

@@ -3,8 +3,8 @@
 /**
  * @author    Reign <hello@reign.com.au>
  * @version   1.1.0
- * @copyright Copyright (c) 2018 Reign. All rights reserved.
- * @copyright Copyright (c) 2018 Bambora. All rights reserved.
+ * @copyright Copyright (c) 2019 Reign. All rights reserved.
+ * @copyright Copyright (c) 2019 Bambora. All rights reserved.
  * @license   Proprietary/Closed Source
  * By viewing, using, or actively developing this application in any way, you are
  * henceforth bound the license agreement, and all of its changes, set forth by
@@ -56,26 +56,6 @@
                     <label>Sandbox API Password</label>
                     <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
                 </field>
- 
- 
-                <!--
-                <field id="live_api_username" translate="label" type="text" sortOrder="32" showInDefault="1" showInWebsite="1" showInStore="0">
-                    <label>Live Api Username</label>
-                </field>
-
-                <field id="live_api_password" translate="label" type="text" sortOrder="33" showInDefault="1" showInWebsite="1" showInStore="0">
-                    <label>Live Api Password</label>
-                </field>
-
-
-                <field id="sandbox_api_username" translate="label" type="text" sortOrder="34" showInDefault="1" showInWebsite="1" showInStore="0">
-                    <label>Sandbox Api Username</label>
-                </field>
-
-                <field id="sandbox_api_password" translate="label" type="text" sortOrder="35" showInDefault="1" showInWebsite="1" showInStore="0">
-                    <label>Sandbox Api Password</label>
-                </field>
-                -->
                 
                 <field id="payment_action" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="0">
                     <label>Payment Action</label>
